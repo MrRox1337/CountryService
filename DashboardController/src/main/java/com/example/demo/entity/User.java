@@ -38,7 +38,70 @@ public class User {
 	@Column(name="password")
 	private String password;
 	
+	@Column(name="country")
+	private String country;
 	
+	@Column(name="address")
+	private String address;
+	
+	@Column(name="zip")
+	private String zip;
+	
+	@Column(name="empType")
+	private String empType;
+	
+	@Column(name="email")
+	private String email;
+	
+	@Column(name="payMethod")
+	private String payMethod;
+	
+	@Column(name="photo")
+	private Byte[] photo;
+	
+	
+	public Byte[] getPhoto() {
+		return photo;
+	}
+	public void setPhoto(Byte[] photo) {
+		this.photo = photo;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getZip() {
+		return zip;
+	}
+	public void setZip(String zip) {
+		this.zip = zip;
+	}
+	public String getEmpType() {
+		return empType;
+	}
+	public void setEmpType(String empType) {
+		this.empType = empType;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPayMethod() {
+		return payMethod;
+	}
+	public void setPayMethod(String payMethod) {
+		this.payMethod = payMethod;
+	}
 	public Integer getId() {
 		return id;
 	}

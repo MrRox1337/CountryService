@@ -2,12 +2,14 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
-public class DashboardControllerApplication {
+@EnableEurekaClient
+public class DashboardServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DashboardControllerApplication.class, args);
+		SpringApplication.run(DashboardServiceApplication.class, args);
 	}
 
 }
