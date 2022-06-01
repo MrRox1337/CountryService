@@ -32,7 +32,7 @@ public class DashboardService {
     }
 
 	@RequestMapping(value = "/processUserData")
-	public void processUser(@RequestParam("formDto") UserDto userDto) {
+	public void processUserData(@RequestParam("formDto") UserDto userDto) {
 		
 		
 		User user = new User();
